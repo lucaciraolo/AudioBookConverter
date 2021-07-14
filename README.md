@@ -14,3 +14,7 @@ ls *.mp3 | \
     sed -e "s/\(.*\)/file '\1'/" | \
     ffmpeg -protocol_whitelist 'file,pipe' -f concat -i - -c copy output.mp3
 ```
+
+## Change ID3 Album Tag to Title!
+
+The Album is what shows up as the title on the Sandisk Clip Jam
